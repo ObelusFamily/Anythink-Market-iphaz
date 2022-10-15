@@ -1,13 +1,18 @@
-# Welcome to the Anythink Market repo
+Hello! Welcome to Anythink. 
 
-To start the app use Docker. It will start both frontend and backend, including all the relevant dependencies, and the db.
+At Anythink, our engineers work with a development environment that's hosted in the cloud called Github Codespace. No need to install anything on your own computer!
 
-Please find more info about each part in the relevant Readme file ([frontend](frontend/readme.md) and [backend](backend/README.md)).
+## Codespace setup
+Go ahead and create your own codespace [here](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=551870316).
+(No need to change anything in the default options, just click on the Create codespace button and wait for it to boot)
 
-## Development
+Once your codespace is up and running, you can run docker-compose up in your codespace's terminal to load Anythink's backend and frontend. 
+## Backend 
+Once docker-compose finishes loading up, the backend should be running and able to connect to the database.
+Make sure you test the back-end by pointing your browser to https://obelusfamily-anythink-market-iphaz-6vwv6gxv544c56x4-3000.githubpreview.dev/api/ping
 
-When implementing a new feature or fixing a bug, please create a new pull request against `main` from a feature/bug branch and add `@vanessa-cooper` as reviewer.
+## Frontend
+Go ahead and check if the frontend is up and running. If everything is working properly, you’ll be able to create a new user on https://obelusfamily-anythink-market-iphaz-6vwv6gxv544c56x4-3001.githubpreview.dev/register
 
-## First setup
-
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+## Conclusion
+Just make sure that you run all scripts in the next quests on one of the containers created by docker-compose up.  Also, you can use docker exec to run commands on a running container.
